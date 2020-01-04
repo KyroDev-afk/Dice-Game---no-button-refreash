@@ -51,6 +51,8 @@ if (ifirst === 1) {
     document.getElementById("second").src = "images/dice6.png"; 
   }
 
+//  Determining the winner  
+
   if (ifirst > isecond) {  
     document.querySelector(".displaywinner").innerHTML = "Player 1 Wins"
 } 
