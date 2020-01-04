@@ -1,0 +1,95 @@
+.diceGame{ 
+    margin: 0;
+    background-color: #1b262c;
+}
+
+/* heading */
+
+.container-heading { 
+    text-align: center;
+    width: 100%;
+    height:100px
+}
+
+.heading { 
+    color:#52DE97;
+    font-family: 'Pacifico', cursive;
+    font-size: 3rem;
+    margin: 15px auto;
+}
+
+.hidden { 
+    visibility: hidden;
+}
+
+.nothidden { 
+    visibility: visible;
+}
+
+.display { 
+    text-align: center;
+}
+
+.result { 
+    color:#52DE97;
+    font-family: 'Pacifico', cursive;
+    padding:20px;
+    font-size: 5rem;
+    /* visibility: hidden; */
+}
+
+/* images and dice */
+
+.container-dice { 
+    display: flex;
+    justify-content: center;
+    padding:100px;
+    margin: 30px 100px;
+}
+
+.container-identify { 
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    color:#52DE97;
+    font-family: 'Pacifico', cursive;
+}
+
+#player1 { 
+    padding: 10px 0 10px 110px;
+    text-decoration: underline;
+} 
+
+#player2 { 
+    padding: 10px 0 10px 250px;
+    text-decoration: underline;
+
+}
+
+.images > img { 
+    width: 300px;
+    height: 300px;
+    padding: 30px;
+}
+
+/* Button */
+
+.container-button { 
+    text-align: center;
+    padding: 100px;
+    margin-bottom: 400px;
+}
+
+.refresh { 
+    font-family: 'Pacifico', cursive;
+    background-color:#52DE97;
+}
+
+/* .hidden { 
+    visibility: hidden;
+} */
+
+
+
+
+
