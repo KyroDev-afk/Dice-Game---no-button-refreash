@@ -1,7 +1,8 @@
-var ifirst = Math.floor((Math.random()*6)+1); 
-var isecond = Math.floor((Math.random()*6)+1); 
-
 function rollthedice () { 
+
+    var ifirst = Math.floor((Math.random()*6)+1); 
+    var isecond = Math.floor((Math.random()*6)+1);
+
 if (ifirst === 1) { 
     document.getElementById("first").src = "images/dice1.png"; 
   }
@@ -50,25 +51,21 @@ if (ifirst === 1) {
     document.getElementById("second").src = "images/dice6.png"; 
   }
 
+  if (ifirst > isecond) {  
+    document.querySelector(".displaywinner").innerHTML = "Player 1 Wins"
+} 
+
+if (ifirst < isecond) { 
+    document.querySelector(".displaywinner").innerHTML = "Player 2 Wins"
 }
-     function winner () {
+
+if (ifirst === isecond) { 
+    document.querySelector(".displaywinner").innerHTML = "It is a draw" 
+}
+}  
     
-    rollthedice(); 
 
-    if (ifirst > isecond) { 
-        document.querySelector(".result").innerHTML = "Player 1 Wins"
-    } 
-
-    if (ifirst < isecond) { 
-        document.querySelector(".result").innerHTML = "Player 2 Wins"
-    }
-
-    if (ifirst === isecond) { 
-        document.querySelector(".result").innerHTML = "It is a draw" 
-    }
-    }
-
-    winner();
+   
 
 
 
